@@ -66,10 +66,10 @@ print(price_panel)
 ## if you have xlwings installed in excel, you may run the next few lines
 ## to have the data prints directely in excel
 ## if not use the # to comment the next 7 lines
-workbookName ='EngineA7Live.xlsb'
-sheetName = 'Imports'
-clearCols = 'CK1:DM500000'
-initialCols = 'CK1'
+workbookName ='Workbook1.xlsb'
+sheetName = 'Sheet1'
+clearCols = 'A1:G500000'
+initialCols = 'A1'
 sheet = data.get_sheet(workbookName, sheetName) 
 sheet.range(clearCols).clear_contents()
 sheet.range(initialCols).value = price_panel
